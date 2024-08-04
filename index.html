@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NhomMinecraftVN</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../source/fontawesome-free-6.5.1-web/css/all.css">
+    <script type="module" src="../assets/js/main.js"></script>
 </head>
-<body>
-    NhomMinecraftVN Website has under construction
+
+<header class="banner bgr" id="home">
+    <img src="../assets/images/logo/logo.png" class="header-logo">
+    <div class="content">
+        <h2 class="text-shadow" style="color: white;">Nhóm Minecraft VN</h2>
+        <p class="text-shadow" style="color: white; font-weight: 900;"><span class="ctr">0</span> total members in 3 groups</p>
+        <p class="text-shadow " style="color: white; text-transform: capitalize;">First appearance: <span
+                style="color: white; font-weight: 700;">December 2020</span></code></p>
+        <a href="#groups">Join NhomMinecraftVN</a>
+    </div>
+</header>
+
+<body class="content">
+    <nav>
+        <div class="nav-content">
+
+            <ul class="sidebar">
+                <li onclick="hideSidebar()" style="color: white;font-weight: 400;" class="text-shadow"><i
+                        class="fa fa-xmark"></i></li>
+                <li onclick="hideSidebar()"><a onclick="btn_open()"><i class="fa fa-search"></i>   Search</a></li>
+                <li onclick="hideSidebar()"><a href="#"><i class="fa fa-house"></i>   Home</a></li>
+                <li onclick="hideSidebar()"><a href="#groups"><i class="fa fa-user-group"></i>   Group Hall</a></li>
+                <li onclick="hideSidebar()"><a href="#server"><i class="fa fa-server"></i>   Server</a></li>
+                <li onclick="hideSidebar()"><a href="#rules"><i class="fa fa-gavel"></i>   Rules</a></li>
+                <li onclick="hideSidebar()"><a id="dialog"><i class="fa-regular fa-circle-question"></i>   Help Center</a></li>
+            </ul>
+
+            <ul class="nav-links">
+                <li class="mobile"><a onclick="btn_open()"><i class="fa fa-search"></i></a></li>
+                <li class="mobile"><a href="#home"><i class="fa fa-house"></i> Home</a></li>
+                <li class="mobile"><a href="#groups"><i class="fa fa-user-group"></i> Group Hall</a></li>
+                <div class="logo"><img src="../assets/images/logo/logo.png" alt=""></div>
+                <li class="mobile"><a href="#server">Server <i class="fa fa-server"></i></a></li>
+                <li class="mobile"><a href="#rules">Rules <i class="fa fa-gavel"></i></a></li>
+                <li class="mobile"><a onclick="btn_open()"><i class="fa-regular fa-circle-question"></i></a></li>
+                <li class="bar-btn" onclick="showSidebar()"><a><i class="fa-solid fa-bars"></a></i></li>
+            </ul>
+        </div>
+
+        <script>
+            function showSidebar() {const sidebar = document.querySelector(".sidebar");sidebar.style.display = 'flex';};
+            function hideSidebar() {const sidebar = document.querySelector(".sidebar");sidebar.style.display = 'none';};
+        </script>
+    </nav>
+
+    <section id="groups">
+        <div class="center-text">Group Hall</div>
+        <div class="card-container">
+            <div class="card">
+                <img src="../assets/images/logo/logo2.png">
+                <div class="card-content">
+                    <h3>Nhóm Minecraft VN</h3>
+                    <p>First Group</p>
+                    <p>ID: <code>yl590468</code></p>
+                    <br>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/images/logo/logo3.png">
+                <div class="card-content">
+                    <h3>Nhóm Minecraft VN</h3>
+                    <p>Second Group</p>
+                    <p>ID: <code>cqi104596</code></p>
+                    <br>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/images/logo/logo4.png">
+                <div class="card-content">
+                    <h3>Nhóm Minecraft VN</h3>
+                    <p>Third Group</p>
+                    <p>ID: <code>uyx103786</code></p>
+                    <br>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="server">
+        <div class="center-text">Server</div>
+            <p style="text-align: center; color: white; font-size: 1rem; margin-bottom: 10px;">Minecraft Bedrock Edition</p>
+            <div class="server-container">
+                <input type="text" value="Hoangquan20.aternos.me" disabled class="input-box monospace"
+                    autocomplete="off" name="ip-server">
+            </div>
+    </section>
+
+
+    <section id="rules">
+        <div class="center-text">Rules</div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../assets/images/logo/logo2.png">
+                    <div class="card-content">
+                        <h3>Nhóm Minecraft VN</h3>
+                        <p>First Group</p>
+                        <p>ID: <code>yl590468</code></p>
+                        <br>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../assets/images/logo/logo3.png">
+                    <div class="card-content">
+                        <h3>Nhóm Minecraft VN</h3>
+                        <p>Second Group</p>
+                        <p>ID: <code>cqi104596</code></p>
+                        <br>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../assets/images/logo/logo4.png">
+                    <div class="card-content">
+                        <h3>Nhóm Minecraft VN</h3>
+                        <p>Third Group</p>
+                        <p>ID: <code>uyx103786</code></p>
+                        <br>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+
+            </div>
+         </section>
+
+        <section id="event">
+            <!-- <div class="content2">
+                <h2 style="text-transform: uppercase; text-align: center;">Sự kiện</h2>
+                <p style="text-align: center; font-size: 1.2rem;">Trung tâm Sự kiện</p>
+
+            </div> -->
+        </section>
+
+        <section id="membership">
+            <div class="center-text">Our Members</div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="../assets/images/avatar/nguyenlongmc.png">
+                    <div class="card-content"><h3>【Đ·V🔥】nguyen long</h3><p>664833400</p></div>
+                </div>
+
+                <div class="card">
+                    <img src="../assets/images/avatar/hoangquan.jpg">
+                    <div class="card-content"><h3>『🍗』•ɦ❍àղɕ๖ۣۜqʊâղ⁀ᶦᵈᵒᶫ</h3><p>685551709</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!--dialog-->
+        <div id="modal-container" class="">
+            <div class="modal" id="modal-overlay">
+                <div class="modal-header">
+                    <h3>Notification</h3>
+                    <button id="btn-close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+    
+                <div class="modal-body">
+                    <p>Coming soon</p>
+                </div>
+
+                <button class="btnBlue" onclick="btn_closes()">Agree</button>
+            </div>
+        </div>
+
+        <script>
+            const btn_opens = document.querySelector("#dialog");const btn_close = document.querySelector("#btn-close");const modal_container = document.querySelector("#modal-container");const modal_overlay = document.querySelector("#modal-overlay");
+            btn_opens.addEventListener('click',()=>{modal_container.classList.add("modal-show");});
+            btn_close.addEventListener('click',()=>{modal_container.classList.remove("modal-show");});
+            modal_container.addEventListener("click",(e)=>{if(!modal_overlay.contains(e.target)){btn_close.click();}});
+            function btn_open() {modal_container.classList.add("modal-show")};
+            function btn_closes() {modal_container.classList.remove("modal-show")};
+        </script>
+        <!--end dialog-->
+
+        <button id="toTop">
+            <i class="fa fa-chevron-up"></i>
+        </button>
 </body>
+
+<footer>
+    <span style="color: white;">2020 - <span id="footer-year"></span> NhomMinecraftVN</span>
+    <p style="color: white;">counter: <span id="visit-count"></span>?</p>
+</footer>
+
+<link rel="stylesheet" href="../source/scroll-top/main.css">
+<script src="../source/scroll-top/main.js" ></script>
+<script src="../source/fontawesome-free-6.5.1-web/js/all.js"></script>
+
 </html>
+
+<!-- https://www.facebook.com/profile.php?id=100081277845945&mibextid=ZbWKwl -->
