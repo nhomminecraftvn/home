@@ -1,0 +1,76 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease 0.3s;
+}
+.dialog:target {
+    visibility: visible;
+    opacity: 1;
+}
+.overlay {
+    backdrop-filter: blur(3px);
+    background-color: rgba(0,0,0,0.2);
+}
+.dialog-body {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 700px;
+    position: relative;
+    padding: 25px;
+    background-color: #fff;
+}
+.dialog-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+.dialog-des {
+    margin-top: 14px;
+}
+.dialog-close-btn {
+    color: white;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+}
+.overlay-close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.btnBlue {
+    background: #f0f0f0;
+    outline: none;
+    border: none;
+    padding-left: 90px;
+    padding-top: 10px;
+    padding-right: 90px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: black;
+
+    box-shadow: 0 0 10px 1px #e0e0e0;
+}
+.btnBlue:hover {
+    background: #e9e9e9;
+}
+.btnBlue:active {
+    background: #e5e5e5;
+}
+button {
+    background-color: white;
+}

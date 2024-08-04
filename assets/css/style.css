@@ -1,0 +1,111 @@
+@import url("../fonts/font.css");
+@import url("includes/card.css");
+@import url("includes/modal.css");
+@import url("includes/header.css");
+@import url("includes/navbar.css");
+@import url("includes/server.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'fira sans';
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+code {
+    font-family: 'fira mono', monospace;
+}
+.text-shadow {
+    text-shadow: 0 5px 10px #000;
+}
+
+body {
+    background-color: #0f0f0f;
+    min-height: 100vh;
+    
+}
+
+.content2 {
+    background-color: #0f0f0f;
+    color: white;
+    max-width: 1440px;
+    margin: auto;
+    text-align: justify;
+    padding: 3rem 0;
+    line-height: 1.8rem;
+}
+.content2 h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+
+.bgr {
+    /* background: linear-gradient(150deg,#01bad3,#015ace); */
+    /* background-image: url("../images/bgr.png"); */
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Logo */
+/* .logo {
+    width: 100px 100px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: "";
+    margin-left: -150px;
+    text-align: center;
+    padding: 20px 0 0;
+} */
+
+
+.logo img {
+    width: 265px;
+    height: 49px;
+}
+
+.logo-sidebar img {
+    width: 212.6px;
+    height: 39.2px;
+}
+
+img.logo2  {
+    width: 341px;
+    height: 77.33333333333333px;
+}
+
+@media (max-width: 1300px) {
+    .logo img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.center-text {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    text-align: center;
+}

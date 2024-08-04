@@ -1,0 +1,22 @@
+.server-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-box {
+    height: 47px;
+    width: 40%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    font-size: 24px;
+    color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.010);
+    box-shadow: 0 0 10px 1px #444444;
+    border: none;
+    border-radius: 5px;
+}
+
+.monospace {
+    font-family: 'fira mono';
+}

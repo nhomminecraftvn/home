@@ -1,0 +1,139 @@
+.nav-links a {
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    left: -10px;
+    top: 0;
+    width: 100.9%;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    margin: -5px;
+}
+
+nav ul li {
+    float: none;
+    display: inline-block;
+}
+
+nav ul li:nth-child(1) {
+    float: left;
+}
+
+nav.sticky {
+    background-color: rgba(255,255,255,.2);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+nav .nav-content {
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-content .nav-links {
+    display: flex;
+    align-items: center;
+}
+nav .nav-links li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav .nav-links a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #f0f0f0;
+    padding: 10px 50px;
+}
+
+nav .nav-links a:hover {
+    text-shadow: 0 5px 10px #f0f0f0;
+    color: #e9e9e9
+}
+
+nav .nav-links a:active {
+    text-shadow: 0 5px 10px #f0f0f0;
+    color: #d5d5d5
+}
+
+.sidebar {
+    font-weight: 500;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-top: 15px;
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 150vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover {
+    text-shadow: 0 5px 10px #f0f0f0;
+    color: #e9e9e9
+}
+
+.sidebar a:active {
+    text-shadow: 0 5px 10px #f0f0f0;
+    color: #d5d5d5
+}
+
+.bar-btn {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .mobile {
+        display: none;
+    }
+    .bar-btn { 
+        display: block;
+    }
+    .sidebar {
+        text-shadow: 0 5px 10px #f0f0f0;
+    }
+    nav {
+        display: flex;
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        width: 100%;
+        text-shadow: 0 5px 10px #f0f0f0;
+    }
+    nav {
+        display: flex;
+    }
+}
+
+@media (max-width: 640px) {
+    .sidebar {
+        width: 100%;
+    }
+    nav {
+        display: flex;
+    }
+}
